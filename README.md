@@ -2,14 +2,6 @@
 
 This code allows to transform emails into pdf, whether they are in .msg or .eml format
 
-## Usage :
-
-In terminal: python3 eml_to_pdf_test.py input_path file_name1 file_name2.....
-This will create an output folder in the current directory.
-
-
-
-
 
 ## Library used :
 ### email2pdflib
@@ -58,7 +50,7 @@ instructions here are split out by platform:
 
 * `pip3 install -r requirements.txt`
 
-## Usage
+### Usage
 
 Please look at the `test.py` for an example of how to use the library.
 
@@ -123,3 +115,15 @@ for uid in uids:
 If you get the error that libmagic isn't installed On OSX, install homebrew and try brew install libmagic
 
 
+## Usage :
+
+#### for eml
+In terminal: python3 eml_to_pdf_test.py input_path file_name1 file_name2.....
+This will create an output folder in the current directory.
+
+#### for msg
+In terminal: python3 msg_to_pdf_test.py input_path file_name1 file_name2.....
+This will create an output folder in the current directory.
+
+**Warning**
+> Colors are not kept in msg.
